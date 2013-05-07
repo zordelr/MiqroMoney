@@ -1,0 +1,59 @@
+﻿@model MiqroMoney.Models.RegisterModel
+@{
+    ViewBag.Title = "Register";
+}
+
+<hgroup class="title">
+    <h1>mIQro Money. </h1>
+    <h2>Application Form</h2>
+</hgroup>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary("Required fields in red below.")
+
+    
+    <fieldset>
+        <legend>Registration Form</legend>
+        <div id="registerTable">
+            <div id="registerTableHeader">Line of Credit Application</div>
+            <div id="registerTableSmallHeader">PRINCIPAL INFORMATION</div>
+            <div class="registerTableRow">
+                <div class="registerTabletdLeft" style="width: 235px;">@Html.LabelFor(m => m.LastName) @Html.TextBoxFor(m => m.LastName, new { style = "width:223px;" })</div>
+                <div class="registerTabletdLeft" style="width: 235px;">@Html.LabelFor(m => m.FirstName) @Html.TextBoxFor(m => m.FirstName, new { style = "width:223px;" })</div>
+                <div class="registerTabletdLeft" style="width: 105px;">@Html.LabelFor(m => m.MI) @Html.TextBoxFor(m => m.MI, new { style = "width:93px;" })</div>
+                <div class="registerTabletdLeft" style="width: 185px;">@Html.LabelFor(m => m.BirthDate) @Html.TextBoxFor(m => m.BirthDate, new { style = "width:173px;" })</div>
+                <div class="registerTabletdRight" style="width: 185px;">@Html.LabelFor(m => m.SSN) @Html.TextBoxFor(m => m.SSN, new { style = "width:173px;" })</div>
+            </div>
+            <div class="registerTableRow">
+                <div class="registerTabletdLeft" style="width: 125px;">@Html.LabelFor(m => m.PercentOwnership) @Html.TextBoxFor(m => m.PercentOwnership, new { style = "width:113px;" })</div>
+                <div class="registerTabletdLeft" style="width: 450px;">@Html.LabelFor(m => m.Title) @Html.TextBoxFor(m => m.Title, new { style = "width:438px;" })</div>
+                <div class="registerTabletdLeft" style="width: 250px;">@Html.LabelFor(m => m.DL) @Html.TextBoxFor(m => m.DL, new { style = "width:238px;" })</div>
+                <div class="registerTabletdRight" style="width: 121px;">@Html.LabelFor(m => m.DLState) @Html.TextBoxFor(m => m.DLState, new { style = "width:109px;" })</div>
+            </div>
+            <div class="registerTableRow">
+                <div class="registerTabletdLeft" style="width: 400px;">@Html.LabelFor(m => m.HomeAddress) @Html.TextBoxFor(m => m.HomeAddress, new { style = "width:388px;" })</div>
+                <div class="registerTabletdLeft" style="width: 275px;">@Html.LabelFor(m => m.City) @Html.TextBoxFor(m => m.City, new { style = "width:263px;" })</div>
+                <div class="registerTabletdLeft" style="width: 146px;">@Html.LabelFor(m => m.State) @Html.TextBoxFor(m => m.State, new { style = "width:134px;" })</div>
+                <div class="registerTabletdRight" style="width: 125px;">@Html.LabelFor(m => m.Zip) @Html.TextBoxFor(m => m.Zip, new { style = "width:113px;" })</div>
+            </div>
+            <div class="registerTableRow">
+                <div class="registerTabletdLeft" style="width: 315px;">@Html.LabelFor(m => m.HomePhone) @Html.TextBoxFor(m => m.HomePhone, new { style = "width:303px;" })</div>
+                <div class="registerTabletdLeft" style="width: 316px;">@Html.LabelFor(m => m.CellPhone) @Html.TextBoxFor(m => m.CellPhone, new { style = "width:304px;" })</div>
+                <div class="registerTabletdRight" style="width: 316px;">@Html.LabelFor(m => m.FaxNumber) @Html.TextBoxFor(m => m.FaxNumber, new { style = "width:304px;" })</div>
+            </div>
+            <div class="registerTableRow">
+                <div class="registerTabletdLeft" style="width: 315px;">@Html.LabelFor(m => m.UserName) @Html.TextBoxFor(m => m.UserName, new { style = "width:303px;" })</div>
+                <div class="registerTabletdLeft" style="width: 316px;">@Html.LabelFor(m => m.Password) @Html.TextBoxFor(m => m.Password, new { style = "width:304px;" })</div>
+                <div class="registerTabletdRight" style="width: 316px;">@Html.LabelFor(m => m.ConfirmPassword) @Html.TextBoxFor(m => m.ConfirmPassword, new { style = "width:304px;" })</div>
+            </div>
+
+                <input type="submit" value="Register" />
+        </div>
+    </fieldset>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

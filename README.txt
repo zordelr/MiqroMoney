@@ -1,0 +1,1 @@
+All Rights Reserved. MiqroMoney, LLC 2013

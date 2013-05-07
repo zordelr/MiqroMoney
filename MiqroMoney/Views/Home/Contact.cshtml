@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+<hgroup class="title">
+    <h1>mIQro Money.</h1>
+    <h2>@ViewBag.Message</h2>
+</hgroup>
+
+<h1>Need extra cash fast? Contact mIQro Money today!</h1>
+          <p>Have all the documentation ready to go and send it in with the application. You could have money in less than 2 days. </p>
+          <p>The following documentation will be required to complete your application.</p>
+          <ol>
+            <li>
+                Completed Application </li>
+            <li>
+                Business License</li>
+            <li>
+                Driver's License</li>
+            <li>
+                Voided Check</li>
+            <li>Articles of Incorporation or Partnership</li>
+            <li>Three (3) current processing statements</li>
+            </ol>
+          <p>Please fill out the form below to get started. </p>
+
+ <table width="100%" border="1" align="center" cellpadding="2" cellspacing="1" bordercolor="#CCCCCC" class="table">
+          <tr class="table">
+            <td width="26%" align="left" class="fieldnames">Name:</td>
+            <td width="74%" align="left" class="red"><input name="contactname" type="text" id="contactname" style="width:200px;" />
+                <span id="cvName" style="color:Red;font-size:XX-Small;display:none;">Required</span>
+            </td>
+          </tr>
+          <tr class="table">
+            <td align="left" class="fieldnames">Company:</td>
+            <td align="left" class="red"><input name="companyname" type="text" id="companyname" style="width:200px;" />
+                <span id="cvCompany" style="color:Red;font-size:XX-Small;display:none;">Required</span>
+            </td>
+          </tr>
+          <tr class="table">
+            <td align="left" class="fieldnames">Phone:</td>
+            <td align="left" class="red"><input name="contactphone1" type="text" maxlength="3" id="contactphone1" style="width:30px;" />
+    -
+      <input name="contactphone2" type="text" maxlength="3" id="contactphone2" style="width:30px;" />
+    -
+    <input name="contactphone3" type="text" maxlength="4" id="contactphone3" style="width:40px;" />
+    <span id="cvcontactphone" style="color:Red;font-size:XX-Small;display:none;">Required</span>
+            </td>
+          </tr>
+          <tr class="table">
+            <td align="left" class="fieldnames">Email:</td>
+            <td align="left" class="red"><input name="emailaddress" type="text" id="emailaddress" style="width:200px;" />
+                <span id="cvemailaddress" style="color:Red;font-size:XX-Small;display:none;">Required</span>
+                <span id="revEmail" style="color:Red;font-size:XX-Small;display:none;">Invalid</span>
+            </td>
+          </tr>
+          <tr class="table">
+            <td align="left" class="fieldnames">Confirm Email:</td>
+            <td align="left" class="red"><input name="confirmemailaddress" type="text" id="confirmemailaddress" style="width:200px;" />
+                <span id="cvconfirmemailaddress" style="color:Red;font-size:XX-Small;display:none;">Required</span>
+                <span id="revConfirmEmail" style="color:Red;font-size:XX-Small;display:none;">Invalid</span>
+                <span id="CompareValidator1" style="color:Red;font-size:XX-Small;display:none;">Emails Must Match</span>
+            </td>
+          </tr>
+          <tr class="table">
+            <td align="left" class="fieldnames">Web Site: </td>
+            <td align="left" class="red"><input name="websiteaddress" type="text" id="websiteaddress" style="width:200px;" />
+                <span id="cvwebsite" style="color:Red;font-size:XX-Small;display:none;">Required</span>
+            </td>
+          </tr>
+        </table>
+        <table width="95%" height="50" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td height="50" align="center" valign="middle"><input type="submit" name="Submit" value="Submit Request" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;Submit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="Submit" />            </td>
+          </tr>
+        </table>

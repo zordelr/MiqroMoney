@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+<hgroup class="title">
+    <h1>mIQro Money.</h1>
+    <h2>@ViewBag.Message</h2>
+</hgroup>
+
+<article>
+<p>mIQro Money presents the first fully automated,  secure platform for delivering credit to the retail merchant. Utilizing PCI certified secure payment gateway  services interfaced with fully integrated front end merchant boarding engine and web portal, mIQro Money is  able to deliver a range of solutions and products&nbsp; to meet all the emergency credit needs of the Small Merchant;  I.e.&#13;</p>
+<ul>
+  <li>  mIQro Advance - for  merchants who need to accelerate the payments from their credit and debit card  transactions. <br />
+    <br />
+    </li>
+  <li>mIQro On Demand - 10-15 day credit line up to  30% of a merchants average monthly batch values<br />
+    <br />
+    </li>
+  <li>mIQro Business Line - 30-180 day factored loans up  to 100% of a merchants average monthly batch values.</li>
+</ul>
+
+</article>
+
+<aside>
+    <h3>More Information</h3>
+    <p>
+        Looking for more information about mIQro Money?
+    </p>
+    <ul>
+        <li>@Html.ActionLink("How much can I borrow?", "Borrow", "Home")</li>
+        <li>@Html.ActionLink("Frequently Asked Questions", "FAQs", "Home")</li>
+        <li>@Html.ActionLink("Benefits", "Benefits", "Home")</li>
+        <li>@Html.ActionLink("Requirements", "Requirements", "Home")</li>
+        <li>@Html.ActionLink("Repayment", "Repayment", "Home")</li>
+
+    </ul>
+</aside>

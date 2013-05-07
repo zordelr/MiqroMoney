@@ -1,0 +1,39 @@
+﻿@model MiqroMoney.ViewModels.AccountViewModel
+
+
+@{
+    ViewBag.Title = "Manage Account";
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+</hgroup>
+
+
+
+
+
+<section id="loginForm">
+    <p>You're logged in as <strong>@User.Identity.Name</strong>.</p>
+
+    @Html.ActionLink("View Principal Information", "PrincipalInformation", "Account")
+
+</section>
+
+<section id="LoginFormDetails">
+
+    <p class="message-success">@ViewBag.StatusMessage</p>
+
+    @if (ViewBag.HasLocalPassword)
+    {
+        @Html.Partial("_ChangePasswordPartial")
+    }
+    else
+    { 
+        @Html.Partial("_SetPasswordPartial")
+    }
+</section>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

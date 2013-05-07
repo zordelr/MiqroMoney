@@ -1,0 +1,70 @@
+﻿@{
+
+    ViewBag.Title = "Welcome";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <p>
+                <h1>Micro Loans for Small Businesses</h1>
+                <p>mIQro Money is simply the easiest and quickest way for  any merchant to get a short term loan when you need it&hellip;&nbsp;&nbsp; mIQro Money is an active line of credit that  gives you IMMEDIATE access to cash when you need it&hellip;</p>
+
+            </p>
+            <em>Any Time. Any Day. Any Where.</em>
+        </div>
+    </section>
+
+}
+
+<section id="loginForm">
+
+    @if (Request.IsAuthenticated)
+    {
+        <text>
+            Hello, @Html.ActionLink(User.Identity.Name, "Manage", "Account", routeValues: null, htmlAttributes: new { @class = "username", title = "Manage" })!
+        </text>
+    } else {
+        <text>
+        <h1>Apply for a mIQro Money Loan</h1>
+        <p>The mIQro Money process is straight forward:&nbsp;</p>
+        <p><span class="green-bold">STEP 1. </span>You apply on-line  once only to enroll in mIQro Money Line of Credit, </p>
+        <p><span class="green-bold">STEP 2.</span>&nbsp; When you are approved, typically 48 hours,  you will be setup with a mIQro Money account and have access to your line of credit whenever you need  it.</p>
+        <p><span class="green-bold">STEP 3.</span> Whenever you need a little extra cash, from as little  as $10 up to your preapproved limit you simply access your mIQro credit line via internet or  phone....&#13;</p>
+        @Html.ActionLink("Apply Now", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })
+        </text>
+    }
+
+</section>
+<section id="LoginFormDetails">
+
+     @if (Request.IsAuthenticated)
+    {
+         
+        <text>
+            Have a question about your account? <br /><br />
+            @Html.ActionLink("Click here to contact mIQro Money support", "Contact", "Home")
+        </text>
+         
+    } else {
+         
+        <text>
+            Already have a mIQro Money account?  <br /><br />
+             @Html.ActionLink("Click here to log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })
+        </text>
+
+     }
+
+    
+
+</section>
+
+
+
+
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

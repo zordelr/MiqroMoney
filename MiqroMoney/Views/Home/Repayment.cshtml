@@ -1,0 +1,123 @@
+﻿@{
+    ViewBag.Title = "Repayment";
+}
+
+<hgroup class="title">
+    <h1>mIQro Money.</h1>
+    <h2>@ViewBag.Message</h2>
+</hgroup>
+
+<article>
+
+    <h2>How does a Micro Loan or Micro Advance Repayment Plan work?</h2>
+    <p>
+        mIQro  Money&rsquo;s line of credit is a fixed 10 day loan.&nbsp;  Repayment of your mIQro Line of Credit is as simple as drawing on your  line.                mIQro Money will deduct, in equal increments, from your credit card  processing settlements, sufficient funds  to repay the line and fees in 10 days.                 For example, if your business borrows  $1400 today, mIQro Money will capture $140 in principle and $14 in fees per day from your credit card settlements over each of the next 10 days.&#13;
+    </p>
+    <p>
+        If in a given day, the repayment amount due is greater than the amount of the credit card processing deposit, mIQro Money will instead reclaim the full amount of the deposit.  The remaining unpaid 
+            balance from that day is then added into the remainder of the payments.  Using the example above, if a daily deposit is only $100, mIQro Money will reclaim $100 and the remaining $54 will be split over 
+            the next nine (9) repayments.
+    </p>
+    <p>
+        If the full loan with fees is not completely repaid within ten (10) days, mIQro Money will attempt to reclaim the full unpaid balance each day for four (4) days.  If a balance remains
+            after fourteen (14) days, the account is suspended and further collection methods may be employed.
+    </p>
+    <p>
+        <em>Note: All repayment amounts are rounded up to the nearest whole dollar amount.  The final repayment amount will only be the remaining balance.  mIQro Money will never reclaim more funds 
+                than the original loan amount plus $10 per $100 borrowed.
+        </em>
+    </p>
+    <p>
+        <h2>Full Repayment Schedule Example:</h2>
+        <br />
+        <strong>Day 0 </strong>
+        <ul>
+
+            <li>New Loan for $1,000.00 ($100.00 in fees is added to this)</li>
+            <li>Balance: $1,100.00</li>
+            <li>Remaining Repayment Days: 10</li>
+        </ul>
+        <strong>Day 1 </strong>
+        <ul>
+            <li>Settlement Deposit is $300.00.  mIQro Money reclaims $110.00</li>
+            <li>Balance is $990.00</li>
+            <li>Remaining Repayment Days: 9</li>
+        </ul>
+        <strong>Day 2 </strong>
+        <ul>
+            <li>Settlement Deposit is $500.00.  mIQro Money reclaims $110.00</li>
+            <li>Balance is $880.00</li>
+            <li>Remaining Repayment Days: 8</li>
+        </ul>
+        <strong>Day 3 </strong>
+        <ul>
+            <li>Settlement Deposit is $100.00.  mIQro Money reclaims $100.00</li>
+            <li>Balance is $780.00</li>
+            <li>Remaining Repayment Days: 7</li>
+        </ul>
+        <strong>Day 4 </strong>
+        <ul>
+            <li>Settlement Deposit is $400.00.  mIQro Money reclaims $112.00</li>
+            <li>Balance is $668.00</li>
+            <li>Remaining Repayment Days: 6</li>
+        </ul>
+        <strong>Day 5 </strong>
+        <ul>
+            <li>Settlement Deposit is $50.00.  mIQro Money reclaims $50.00</li>
+            <li>Balance is $618.00</li>
+            <li>Remaining Repayment Days: 5</li>
+        </ul>
+        <strong>Day 6 </strong>
+        <ul>
+            <li>Settlement Deposit is $350.00.  mIQro Money reclaims $124.00</li>
+            <li>Balance is $494.00</li>
+            <li>Remaining Repayment Days: 4</li>
+        </ul>
+        <strong>Day 7 </strong>
+        <ul>
+            <li>Settlement Deposit is $200.00.  mIQro Money reclaims $124.00</li>
+            <li>Balance is $370.00</li>
+            <li>Remaining Repayment Days: 3</li>
+        </ul>
+        <strong>Day 8 </strong>
+        <ul>
+            <li>Settlement Deposit is $800.00.  mIQro Money reclaims $124.00</li>
+            <li>Balance is $246.00</li>
+            <li>Remaining Repayment Days: 2</li>
+        </ul>
+        <strong>Day 9 </strong>
+        <ul>
+            <li>Settlement Deposit is $1500.00.  mIQro Money reclaims $123.00</li>
+            <li>Balance is $123.00</li>
+            <li>Remaining Repayment Days: 1</li>
+        </ul>
+        <strong>Day 10 </strong>
+        <ul>
+            <li>Settlement Deposit is $0.00.  mIQro Money reclaims $0.00</li>
+            <li>Balance is $123.00</li>
+            <li>Remaining Repayment Days: 0</li>
+        </ul>
+        <strong>Day 11 </strong>
+        <ul>
+            <li>Settlement Deposit is $300.00.  mIQro Money reclaims $123.00</li>
+            <li>Balance is $0.00</li>
+        </ul>
+    </p>
+
+</article>
+
+
+<aside>
+    <h3>More Information</h3>
+    <p>
+        Looking for more information about mIQro Money?
+    </p>
+    <ul>
+        <li>@Html.ActionLink("How much can I borrow?", "Borrow", "Home")</li>
+        <li>@Html.ActionLink("Frequently Asked Questions", "FAQs", "Home")</li>
+        <li>@Html.ActionLink("Benefits", "Benefits", "Home")</li>
+        <li>@Html.ActionLink("Requirements", "Requirements", "Home")</li>
+        <li>@Html.ActionLink("Repayment", "Repayment", "Home")</li>
+
+    </ul>
+</aside>
